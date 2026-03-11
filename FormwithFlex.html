@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create An Account Form</title>
+    <link rel="stylesheet" href="FormwithFlex.css" />
+  </head>
+  <body>
+    <div class="Account">
+      <header>
+        <h1>CREATE AN ACCOUNT</h1>
+        <p>We always keep your name and email address private.</p>
+      </header>
+
+      <form>
+        <div class="inputs">
+          <input type="text" placeholder="First name" />
+          <input type="text" placeholder="Last name" />
+        </div>
+        <div class="inputs">
+          <input type="text" placeholder="Display Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="inputs">
+          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Password Confirmation" />
+        </div>
+
+        <div class="RoleChoice">
+          <label class="RoleCheck">
+            <input type="radio" name="role" checked />
+            <div class="inBox">
+              <span class="title">Join As a Buyer</span>
+              <span class="explanation"
+                >I am looking for a Name, Logo or Tagline for my business, brand
+                or product.</span
+              >
+            </div>
+          </label>
+
+          <label class="RoleCheck">
+            <input type="radio" name="role" />
+            <div class="inBox">
+              <span class="title"
+                >Join As a Creative or Marketplace Seller</span
+              >
+              <span class="explanation"
+                >I plan to submit name ideas, logo designs or sell names in
+                Domain Marketplace.</span
+              >
+            </div>
+          </label>
+        </div>
+
+        <div class="agree">
+          <input type="checkbox" id="agree" />
+          <label for="consent"
+            >Allow Squadhelp to send marketing/promotional offers from time to
+            time</label
+          >
+        </div>
+
+        <button type="submit" class="btn">Create account</button>
+      </form>
+    </div>
+  </body>
+</html>
